@@ -6,9 +6,11 @@
 .home-services{padding:54px 0 62px}
 .home-services h2{font-size:clamp(1.7rem,3vw,2.35rem);margin-bottom:22px}
 .home-service-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.home-service-links a{display:flex;flex-direction:column;align-items:flex-start;min-height:190px;padding:26px;background:#fff;border:1px solid var(--line);border-radius:16px;color:var(--navy);box-shadow:0 8px 25px rgba(8,31,49,.04)}
+.home-service-links a{display:flex;flex-direction:column;min-height:0;padding:0;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:16px;color:var(--navy);box-shadow:0 8px 25px rgba(8,31,49,.04)}
+.home-service-links .service-photo{width:100%;height:160px;object-fit:cover;object-position:center;flex:none}
+.home-service-links .service-card-body{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:22px 24px 24px}
 .home-service-links strong{font:700 1.42rem/1.2 Georgia,serif;margin-bottom:12px}
-.home-service-links span{color:var(--muted);line-height:1.5}
+.home-service-links .service-summary{color:var(--muted);line-height:1.5}
 .home-service-links em{font-style:normal;font-size:.9rem;font-weight:800;color:#0878af;margin-top:auto;padding-top:20px}
 .home-next{padding:58px 0;background:#eaf4f7}
 .home-next-inner{display:grid;grid-template-columns:1fr 2fr;gap:50px;align-items:start}
@@ -30,4 +32,5 @@
 .home-footer a:hover,.home-footer a:focus-visible{color:#fff;text-decoration:underline}
 @media(max-width:850px){.home-hero{min-height:500px}.home-hero .hero-copy{padding:75px 0}.home-service-links{grid-template-columns:1fr}.home-service-links a{min-height:0}.home-next-inner{grid-template-columns:1fr}.home-area-inner{align-items:flex-start;flex-direction:column}.home-footer{padding-bottom:110px}}
 @media(max-width:560px){.home-hero{min-height:510px;background-position:62% center}.home-hero .hero-copy{padding:65px 0}.home-hero h1{font-size:clamp(2.6rem,11vw,3.5rem)}.home-services{padding:38px 0 45px}.home-footer-inner{align-items:flex-start;flex-direction:column;gap:8px}}
+@media(max-width:560px){.home-service-links .service-photo{height:150px}}
 @media(max-width:560px){.home-next{padding:42px 0}.home-next ol{grid-template-columns:1fr;gap:20px}.home-area{padding:42px 0 50px}}
