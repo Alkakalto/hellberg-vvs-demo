@@ -1,0 +1,16 @@
+.home-hero{min-height:560px;min-height:min(650px,calc(100svh - 120px));background-position:center center}
+.home-hero .hero-copy{padding:78px 0 74px;max-width:690px}
+.home-hero h1{font-size:clamp(2.9rem,5.2vw,5rem);max-width:670px}
+.home-hero .lead{max-width:520px}
+.home-hero .hero-actions{margin:28px 0 0}
+.home-services{padding:54px 0 62px}
+.home-services h2{font-size:clamp(1.7rem,3vw,2.35rem);margin-bottom:22px}
+.home-service-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.home-service-links a{display:flex;align-items:center;min-height:85px;padding:20px 24px;background:#fff;border:1px solid var(--line);border-radius:16px;font-weight:800;color:var(--navy);box-shadow:0 8px 25px rgba(8,31,49,.04)}
+.home-service-links a:hover,.home-service-links a:focus-visible{border-color:var(--blue);color:#0878af;outline-offset:3px}
+.home-footer{padding:30px 0}
+.home-footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.9rem}
+.home-footer a:hover,.home-footer a:focus-visible{color:#fff;text-decoration:underline}
+@media(max-width:850px){.home-hero{min-height:500px}.home-hero .hero-copy{padding:75px 0}.home-service-links{grid-template-columns:1fr}.home-service-links a{min-height:62px}.home-footer{padding-bottom:110px}}
+@media(max-width:560px){.home-hero{min-height:510px;background-position:62% center}.home-hero .hero-copy{padding:65px 0}.home-hero h1{font-size:clamp(2.6rem,11vw,3.5rem)}.home-services{padding:38px 0 45px}.home-footer-inner{align-items:flex-start;flex-direction:column;gap:8px}}
+
