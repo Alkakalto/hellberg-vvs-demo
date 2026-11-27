@@ -3,11 +3,20 @@ const links = document.querySelector('.nav-links');
 menu?.addEventListener('click', () => {
   const open = links.classList.toggle('open');
   menu.setAttribute('aria-expanded', String(open));
+  menu.setAttribute('aria-label', open ? 'Stäng meny' : 'Öppna meny');
 });
 document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => {
   links?.classList.remove('open');
   menu?.setAttribute('aria-expanded', 'false');
+  menu?.setAttribute('aria-label', 'Öppna meny');
 }));
+document.addEventListener('keydown', event => {
+  if (event.key !== 'Escape' || !links?.classList.contains('open')) return;
+  links.classList.remove('open');
+  menu?.setAttribute('aria-expanded', 'false');
+  menu?.setAttribute('aria-label', 'Öppna meny');
+  menu?.focus();
+});
 
 const inquiryForm = document.querySelector('[data-inquiry-form]');
 if (inquiryForm) {

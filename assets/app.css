@@ -19,3 +19,5 @@
 .footer-identity .footer-mark{width:34px;filter:brightness(1.8)}
 @media(max-width:850px){.site-header .nav-links{background:#f7fbfd;color:var(--navy);box-shadow:0 16px 24px rgba(7,23,38,.12)}}
 @media(max-width:560px){.site-header .brand-logo{width:190px}}
+@media(max-width:850px){.site-header .menu-btn{display:grid;place-items:center;width:46px;height:46px;padding:0;cursor:pointer}.site-header .nav-links.open{align-items:stretch;gap:0;padding:10px 20px 16px;max-height:calc(100dvh - 82px);overflow-y:auto}.site-header .nav-links a{display:flex;align-items:center;min-height:44px;padding:10px 14px;font-size:1rem}.site-header .nav-links .btn{justify-content:center;margin-top:8px}.mobile-bar{padding-bottom:env(safe-area-inset-bottom)}.mobile-bar a{display:grid;place-items:center;min-height:52px}}
+@media(max-width:560px){.page-hero{padding:56px 0 48px}.page-hero h1{font-size:clamp(2.2rem,9vw,3.15rem);overflow-wrap:anywhere}.section{padding:56px 0}.split{gap:26px}.card{padding:24px}}

@@ -8,4 +8,4 @@
 .credential-card p{max-width:55ch;color:var(--muted)}
 .credential-card a{display:inline-block;margin-top:4px;color:#0878a5;font-weight:750;text-decoration:underline;text-underline-offset:4px}
 .credential-card a:hover,.credential-card a:focus-visible{color:#074e70}
-@media(max-width:700px){.credential-list{grid-template-columns:1fr}.credential-card{padding:28px}.credentials-section{padding-top:65px}}
+@media(max-width:700px){.credential-list{grid-template-columns:1fr}.credential-card{padding:24px}.credential-card h3{font-size:1.4rem}.credentials-section{padding-top:55px}}
